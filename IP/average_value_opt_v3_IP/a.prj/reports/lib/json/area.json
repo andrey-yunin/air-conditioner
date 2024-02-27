@@ -1,0 +1,1127 @@
+{
+  "columns":
+  ["", "ALUTs", "FFs", "RAMs", "DSPs", "Details"]
+  , "debug_enabled":"true"
+  , "type":"module"
+  , "total_percent":
+  [28.6068, 24.9109, 6.938, 29.6703, 12.5]
+  , "total":
+  [9226, 3469, 54, 18]
+  , "name":"System"
+  , "max_resources":
+  [37036, 50000, 182, 144]
+  , "children":
+  [
+    {
+      "name":"average_value"
+      , "compute_units":1
+      , "type":"function"
+      , "total_percent":
+      [28.6068, 24.9109, 6.938, 29.6703, 12.5]
+      , "total_kernel_resources":
+      [9226, 3469, 54, 18]
+      , "details":
+      [
+        {
+          "type":"text"
+          , "text":"Number of compute units: 1"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"Component call"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 1 bit wide with a buffer size of 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Component return"
+          , "type":"resource"
+          , "data":
+          [0, 0, 0, 0]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Stream implemented 32 bits wide with a buffer size of 0 elements."
+            }
+          ]
+        }
+        , {
+          "name":"Variable: \n - 'i' (average_value.c:29)"
+          , "type":"resource"
+          , "data":
+          [7, 36, 0, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"average_value.c"
+                , "line":29
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"text"
+              , "text":"Type: Register"
+            }
+            , {
+              "type":"text"
+              , "text":"1 register of width 32 and depth 1"
+            }
+          ]
+        }
+        , {
+          "name":"average_value.c:17 (a)"
+          , "type":"resource"
+          , "data":
+          [0, 0, 2, 0]
+          , "debug":
+          [
+            [
+              {
+                "filename":"average_value.c"
+                , "line":17
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"table"
+              , "Memory system":"Optimal"
+              , "Requested size":"256 bytes"
+              , "Implemented size":"256 bytes"
+              , "Number of banks":"1"
+              , "Bank width":"32 bits"
+              , "Bank depth":"64 words"
+              , "Total replication":"1"
+              , "Additional information":"Requested size 256 bytes, implemented size 256 bytes, stall-free, 1 read and 0 writes. "
+            }
+          ]
+        }
+        , {
+          "name":"average_value.B1.start"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [5, 2, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [5, 2, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [1, 0, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [1, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Channel Read"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 0, 0, 0]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"average_value.B2"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [62, 190, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [62, 62, 0, 0]
+                }
+                , {
+                  "name":"average_value.c:20 > ac_fixed.h:423 > \nac_fixed.h:377 > ac_fixed.h:310 > \nac_int.h:885 > ac_int.h:862"
+                  , "type":"resource"
+                  , "data":
+                  [0, 32, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":20
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":423
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":377
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":310
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":885
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":862
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"average_value.c:30 > ac_fixed.h:440 > \nac_fixed.h:301 > ac_int.h:944 > \nac_int.h:923"
+                  , "type":"resource"
+                  , "data":
+                  [0, 64, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":440
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":301
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":944
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":923
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"average_value.c:31 > ac_fixed.h:298 > \nac_int.h:566"
+                  , "type":"resource"
+                  , "data":
+                  [0, 32, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":31
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":298
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":566
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [49, 135, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"average_value.c:20 > ac_fixed.h:423 > \nac_fixed.h:377 > ac_fixed.h:310 > \nac_int.h:885 > ac_int.h:862"
+                  , "type":"resource"
+                  , "data":
+                  [0.5, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":20
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":423
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":377
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":310
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":885
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":862
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"average_value.c:29"
+                  , "type":"resource"
+                  , "data":
+                  [30, 56.6667, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":29
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"average_value.c:31 > ac_fixed.h:298 > \nac_int.h:566"
+                  , "type":"resource"
+                  , "data":
+                  [7.5, 68, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":31
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":298
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":566
+                      }
+                    ]
+                  ]
+                }
+                , {
+                  "name":"average_value.c:33"
+                  , "type":"resource"
+                  , "data":
+                  [11, 10.3333, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":33
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [45, 32, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [35, 1, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [35, 1, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"average_value.c:29"
+                  , "type":"resource"
+                  , "data":
+                  [42.3333, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":29
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0]
+                    }
+                    , {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [0.666667, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Integer Compare"
+                      , "type":"resource"
+                      , "count":6
+                      , "data":
+                      [8.66667, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:30"
+                  , "type":"resource"
+                  , "data":
+                  [42, 41, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":30
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Load"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [42, 41, 0, 0]
+                      , "details":
+                      [
+                        {
+                          "type":"text"
+                          , "text":"Load uses a Local-pipelined never-stall LSU"
+                        }
+                        , {
+                          "type":"text"
+                          , "text":"Stall-free read from memory declared on average_value.c:17."
+                        }
+                      ]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:30 > ac_fixed.h:432"
+                  , "type":"resource"
+                  , "data":
+                  [1, 1, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":432
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [1, 1, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:30 > ac_fixed.h:434"
+                  , "type":"resource"
+                  , "data":
+                  [11, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":434
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [11, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:30 > ac_fixed.h:438 > \nac_fixed.h:390"
+                  , "type":"resource"
+                  , "data":
+                  [503, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":30
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":438
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":390
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"280-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [281, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [222, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:31 > ac_fixed.h:640 > \nac_int.h:784"
+                  , "type":"resource"
+                  , "data":
+                  [21, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":31
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":640
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":784
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [21, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:31 > ac_fixed.h:640 > \nac_int.h:785"
+                  , "type":"resource"
+                  , "data":
+                  [86, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":31
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":640
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":785
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [65, 0, 0, 0]
+                    }
+                    , {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [21, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:33"
+                  , "type":"resource"
+                  , "data":
+                  [4.66667, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":33
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [0.333333, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Integer Compare"
+                      , "type":"resource"
+                      , "count":3
+                      , "data":
+                      [4.33333, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+        , {
+          "name":"average_value.B3"
+          , "type":"basicblock"
+          , "children":
+          [
+            {
+              "name":"State"
+              , "type":"resource"
+              , "data":
+              [452, 452, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for live values and control logic. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce size of local variables"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce scope of local variables, localizing them as much as possible"
+                    }
+                    , {
+                      "type":"text"
+                      , "text":"reduce number of nested loops"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [452, 452, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Feedback"
+              , "type":"resource"
+              , "data":
+              [3, 8, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Resources for loop-carried dependencies. To reduce this area:"
+                  , "details":
+                  [
+                    {
+                      "type":"text"
+                      , "text":"reduce number and size of loop-carried variables"
+                    }
+                  ]
+                }
+              ]
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [3, 8, 0, 0]
+                }
+              ]
+            }
+            , {
+              "name":"Cluster logic"
+              , "type":"resource"
+              , "data":
+              [86, 51, 0, 0]
+              , "details":
+              [
+                {
+                  "type":"text"
+                  , "text":"Logic required to efficiently support sets of operations that do not stall. This area cannot be affected directly."
+                }
+              ]
+            }
+            , {
+              "name":"Computation"
+              , "type":"resource"
+              , "children":
+              [
+                {
+                  "name":"No Source Line"
+                  , "type":"resource"
+                  , "data":
+                  [3, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":""
+                        , "line":0
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Non-Blocking Channel Write"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [3, 0, 0, 0]
+                    }
+                  ]
+                }
+                , {
+                  "name":"average_value.c:29"
+                  , "type":"resource"
+                  , "data":
+                  [94, 1, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":29
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [10.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Integer Compare"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [35, 1, 0, 0]
+                    }
+                    , {
+                      "name":"Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:33"
+                  , "type":"resource"
+                  , "data":
+                  [59, 0, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":33
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"64-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [32.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [10.5, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Select"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [16, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:37"
+                  , "type":"resource"
+                  , "data":
+                  [6434, 2513, 52, 18]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":37
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [271, 32, 0, 0]
+                    }
+                    , {
+                      "name":"Double-precision Floating-point Divide"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [6041, 2477, 52, 18]
+                    }
+                    , {
+                      "name":"Fptrunc"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [122, 4, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:37 > ac_fixed.h:523 > \nac_int.h:214"
+                  , "type":"resource"
+                  , "data":
+                  [516, 2, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":37
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":523
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":214
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Add"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [33, 0, 0, 0]
+                    }
+                    , {
+                      "name":"And"
+                      , "type":"resource"
+                      , "count":19
+                      , "data":
+                      [42, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Integer Compare"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [120, 1, 0, 0]
+                    }
+                    , {
+                      "name":"Or"
+                      , "type":"resource"
+                      , "count":5
+                      , "data":
+                      [45, 1, 0, 0]
+                    }
+                    , {
+                      "name":"Select"
+                      , "type":"resource"
+                      , "count":8
+                      , "data":
+                      [262, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Xor"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [14, 0, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+                , {
+                  "name":"average_value.c:37 > ac_fixed.h:523 > \nac_int.h:617"
+                  , "type":"resource"
+                  , "data":
+                  [663, 4, 0, 0]
+                  , "debug":
+                  [
+                    [
+                      {
+                        "filename":"average_value.c"
+                        , "line":37
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_fixed.h"
+                        , "line":523
+                      }
+                      , {
+                        "filename":"c:/intelFPGA_lite/18.1/hls/include\\HLS/ac_int.h"
+                        , "line":617
+                      }
+                    ]
+                  ]
+                  , "children":
+                  [
+                    {
+                      "name":"32-bit Integer Subtract"
+                      , "type":"resource"
+                      , "count":2
+                      , "data":
+                      [66, 0, 0, 0]
+                    }
+                    , {
+                      "name":"Call"
+                      , "type":"resource"
+                      , "count":1
+                      , "data":
+                      [597, 4, 0, 0]
+                    }
+                  ]
+                  , "replace_name":"true"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+Info: Starting: Create simulation model
+Info: qsys-generate C:\Andrey\AGSTU\Examensarbete\IP\average_value_opt_v3_IP\a.prj\verification\tb.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=C:\Andrey\AGSTU\Examensarbete\IP\average_value_opt_v3_IP\a.prj\verification\tb\simulation --family="MAX 10" --part=10M50DAF672I7G
+Progress: Loading verification/tb.qsys
+Progress: Reading input file
+Progress: Adding average_value_component_cra_slave_memories_done_concatenate_inst [avalon_concatenate_singlebit_conduits 1.0]
+Progress: Parameterizing module average_value_component_cra_slave_memories_done_concatenate_inst
+Progress: Adding average_value_component_dpi_controller_bind_conduit_fanout_inst [avalon_conduit_fanout 1.0]
+Progress: Parameterizing module average_value_component_dpi_controller_bind_conduit_fanout_inst
+Progress: Adding average_value_component_dpi_controller_enable_conduit_fanout_inst [avalon_conduit_fanout 1.0]
+Progress: Parameterizing module average_value_component_dpi_controller_enable_conduit_fanout_inst
+Progress: Adding average_value_component_dpi_controller_implicit_ready_conduit_fanout_inst [avalon_conduit_fanout 1.0]
+Progress: Parameterizing module average_value_component_dpi_controller_implicit_ready_conduit_fanout_inst
+Progress: Adding average_value_component_dpi_controller_slave_done_concatenate_inst [avalon_concatenate_singlebit_conduits 1.0]
+Progress: Parameterizing module average_value_component_dpi_controller_slave_done_concatenate_inst
+Progress: Adding average_value_component_dpi_controller_slave_readback_fanout_inst [avalon_conduit_fanout 1.0]
+Progress: Parameterizing module average_value_component_dpi_controller_slave_readback_fanout_inst
+Progress: Adding average_value_component_dpi_controller_slave_ready_concatenate_inst [avalon_concatenate_singlebit_conduits 1.0]
+Progress: Parameterizing module average_value_component_dpi_controller_slave_ready_concatenate_inst
+Progress: Adding average_value_inst [average_value 1.0]
+Progress: Parameterizing module average_value_inst
+Progress: Adding clock_reset_inst [hls_sim_clock_reset 1.0]
+Progress: Parameterizing module clock_reset_inst
+Progress: Adding component_dpi_controller_average_value_inst [hls_sim_component_dpi_controller 1.0]
+Progress: Parameterizing module component_dpi_controller_average_value_inst
+Progress: Adding concatenate_component_done_inst [avalon_concatenate_singlebit_conduits 1.0]
+Progress: Parameterizing module concatenate_component_done_inst
+Progress: Adding concatenate_component_wait_for_stream_writes_inst [avalon_concatenate_singlebit_conduits 1.0]
+Progress: Parameterizing module concatenate_component_wait_for_stream_writes_inst
+Progress: Adding main_dpi_controller_inst [hls_sim_main_dpi_controller 1.0]
+Progress: Parameterizing module main_dpi_controller_inst
+Progress: Adding mm_master_dpi_bfm_average_value_avs_a_inst [hls_sim_mm_master_dpi_bfm 1.0]
+Progress: Parameterizing module mm_master_dpi_bfm_average_value_avs_a_inst
+Progress: Adding mm_master_dpi_bfm_average_value_avs_cra_inst [hls_sim_mm_master_dpi_bfm 1.0]
+Progress: Parameterizing module mm_master_dpi_bfm_average_value_avs_cra_inst
+Progress: Adding split_component_start_inst [avalon_split_multibit_conduit 1.0]
+Progress: Parameterizing module split_component_start_inst
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: tb.component_dpi_controller_average_value_inst.dpi_control_stream_writes_active: Interface has no signals
+Warning: tb.mm_master_dpi_bfm_average_value_avs_a_inst.cra_control_slave_memory_writes_done: Interface has no signals
+Warning: tb.component_dpi_controller_average_value_inst: component_dpi_controller_average_value_inst.dpi_control_stream_writes_active must be exported, or connected to a matching conduit.
+Warning: tb.component_dpi_controller_average_value_inst: component_dpi_controller_average_value_inst.component_call must be exported, or connected to a matching conduit.
+Warning: tb.component_dpi_controller_average_value_inst: component_dpi_controller_average_value_inst.component_return must be exported, or connected to a matching conduit.
+Warning: tb.component_dpi_controller_average_value_inst: component_dpi_controller_average_value_inst.returndata must be exported, or connected to a matching conduit.
+Warning: tb.mm_master_dpi_bfm_average_value_avs_a_inst: mm_master_dpi_bfm_average_value_avs_a_inst.cra_control_slave_memory_writes_done must be exported, or connected to a matching conduit.
+Warning: tb.mm_master_dpi_bfm_average_value_avs_cra_inst: mm_master_dpi_bfm_average_value_avs_cra_inst.cra_control_done_writes_to_cra must be exported, or connected to a matching conduit.
+Info: tb: Generating tb "tb" for SIM_VERILOG
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_a_inst.m0 and slave average_value_inst.avs_a because the master has writedata signal 8 bit wide, but the slave is 32 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_a_inst.m0 and slave average_value_inst.avs_a because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_a_inst.m0 and slave average_value_inst.avs_a because the master has readdata signal 8 bit wide, but the slave is 32 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_a_inst.m0 and slave average_value_inst.avs_a because the master has address signal 8 bit wide, but the slave is 6 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_a_inst.m0 and slave average_value_inst.avs_a because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_a_inst.m0 and slave average_value_inst.avs_a because the master has byteenable signal 1 bit wide, but the slave is 4 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_a_inst.m0 and slave average_value_inst.avs_a because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_cra_inst.m0 and slave average_value_inst.avs_cra because the master has burstcount signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_cra_inst.m0 and slave average_value_inst.avs_cra because the master has address signal 6 bit wide, but the slave is 3 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_cra_inst.m0 and slave average_value_inst.avs_cra because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master mm_master_dpi_bfm_average_value_avs_cra_inst.m0 and slave average_value_inst.avs_cra because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
+Info: average_value_component_cra_slave_memories_done_concatenate_inst: "tb" instantiated avalon_concatenate_singlebit_conduits "average_value_component_cra_slave_memories_done_concatenate_inst"
+Info: average_value_component_dpi_controller_bind_conduit_fanout_inst: "tb" instantiated avalon_conduit_fanout "average_value_component_dpi_controller_bind_conduit_fanout_inst"
+Info: average_value_component_dpi_controller_slave_done_concatenate_inst: "tb" instantiated avalon_concatenate_singlebit_conduits "average_value_component_dpi_controller_slave_done_concatenate_inst"
+Info: average_value_inst: "tb" instantiated average_value "average_value_inst"
+Info: clock_reset_inst: "tb" instantiated hls_sim_clock_reset "clock_reset_inst"
+Info: component_dpi_controller_average_value_inst: "tb" instantiated hls_sim_component_dpi_controller "component_dpi_controller_average_value_inst"
+Info: main_dpi_controller_inst: "tb" instantiated hls_sim_main_dpi_controller "main_dpi_controller_inst"
+Info: mm_master_dpi_bfm_average_value_avs_a_inst: "tb" instantiated hls_sim_mm_master_dpi_bfm "mm_master_dpi_bfm_average_value_avs_a_inst"
+Info: split_component_start_inst: "tb" instantiated avalon_split_multibit_conduit "split_component_start_inst"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "tb" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: mm_interconnect_1: "tb" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: irq_mapper: "tb" instantiated altera_irq_mapper "irq_mapper"
+Info: average_value_internal_inst: "average_value_inst" instantiated average_value_internal "average_value_internal_inst"
+Info: mm_master_dpi_bfm_average_value_avs_a_inst_m0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "mm_master_dpi_bfm_average_value_avs_a_inst_m0_translator"
+Info: average_value_inst_avs_a_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "average_value_inst_avs_a_translator"
+Info: mm_master_dpi_bfm_average_value_avs_a_inst_m0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "mm_master_dpi_bfm_average_value_avs_a_inst_m0_agent"
+Info: average_value_inst_avs_a_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "average_value_inst_avs_a_agent"
+Info: average_value_inst_avs_a_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "average_value_inst_avs_a_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/submodules/altera_merlin_arbitrator.sv
+Info: average_value_inst_avs_a_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "average_value_inst_avs_a_cmd_width_adapter"
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: tb: Done "tb" with 27 modules, 225 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=C:\Andrey\AGSTU\Examensarbete\IP\average_value_opt_v3_IP\a.prj\verification\tb\tb.spd --output-directory=C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Andrey\AGSTU\Examensarbete\IP\average_value_opt_v3_IP\a.prj\verification\tb\tb.spd --output-directory=C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	27 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Andrey/AGSTU/Examensarbete/IP/average_value_opt_v3_IP/a.prj/verification/tb/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.

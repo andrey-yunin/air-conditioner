@@ -1,0 +1,18 @@
+Fitter Status : Successful - Fri May 27 16:24:47 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : air_conditioner
+Top-level Entity Name : air_conditioner
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 16,374 / 49,760 ( 33 % )
+    Total combinational functions : 13,405 / 49,760 ( 27 % )
+    Dedicated logic registers : 8,792 / 49,760 ( 18 % )
+Total registers : 8861
+Total pins : 85 / 360 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 1,066,224 / 1,677,312 ( 64 % )
+Embedded Multiplier 9-bit elements : 64 / 288 ( 22 % )
+Total PLLs : 2 / 4 ( 50 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 1 / 2 ( 50 % )

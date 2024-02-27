@@ -1,0 +1,204 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Andrey\AGSTU\Examensarbete\air_conditioner\embedded_computer_system.qsys --block-symbol-file --output-directory=C:\Andrey\AGSTU\Examensarbete\air_conditioner\embedded_computer_system --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading air_conditioner/embedded_computer_system.qsys
+Progress: Reading input file
+Progress: Adding VGA_IP_0 [VGA_IP 1.4]
+Progress: Parameterizing module VGA_IP_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding modular_adc_0 [altera_modular_adc 18.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Adding pll [altpll 18.1]
+Progress: Parameterizing module pll
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding sierra_0 [sierra 9.4.2]
+Progress: Parameterizing module sierra_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding temperature_set_IP_0 [temperature_set_IP 1.0]
+Progress: Parameterizing module temperature_set_IP_0
+Progress: Adding value_0 [average_value 1.0]
+Progress: Reading input file
+Progress: Adding average_value_internal_inst [average_value_internal 1.0]
+Progress: Parameterizing module average_value_internal_inst
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Progress: Parameterizing module value_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: embedded_computer_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: embedded_computer_system.modular_adc_0.control_internal.response/st_splitter_internal.in: The sink has a empty signal of 1 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: embedded_computer_system.modular_adc_0.st_splitter_internal.out0/sample_store_internal.response: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: embedded_computer_system.modular_adc_0.st_splitter_internal.out1/adc_monitor_internal.adc_data: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: embedded_computer_system.sdram_controller: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: embedded_computer_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: embedded_computer_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Andrey\AGSTU\Examensarbete\air_conditioner\embedded_computer_system.qsys --synthesis=VHDL --output-directory=C:\Andrey\AGSTU\Examensarbete\air_conditioner\embedded_computer_system\synthesis --family="MAX 10" --part=10M50DAF484C7G
+Progress: Loading air_conditioner/embedded_computer_system.qsys
+Progress: Reading input file
+Progress: Adding VGA_IP_0 [VGA_IP 1.4]
+Progress: Parameterizing module VGA_IP_0
+Progress: Adding clk_0 [clock_source 18.1]
+Progress: Parameterizing module clk_0
+Progress: Adding cpu [altera_nios2_gen2 18.1]
+Progress: Parameterizing module cpu
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 18.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding modular_adc_0 [altera_modular_adc 18.1]
+Progress: Parameterizing module modular_adc_0
+Progress: Adding pio_0 [altera_avalon_pio 18.1]
+Progress: Parameterizing module pio_0
+Progress: Adding pll [altpll 18.1]
+Progress: Parameterizing module pll
+Progress: Adding sdram_controller [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram_controller
+Progress: Adding sierra_0 [sierra 9.4.2]
+Progress: Parameterizing module sierra_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 18.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding temperature_set_IP_0 [temperature_set_IP 1.0]
+Progress: Parameterizing module temperature_set_IP_0
+Progress: Adding value_0 [average_value 1.0]
+Progress: Parameterizing module value_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: embedded_computer_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: embedded_computer_system.modular_adc_0.control_internal.response/st_splitter_internal.in: The sink has a empty signal of 1 bits, but the source does not. Avalon-ST Adapter will be inserted.
+Info: embedded_computer_system.modular_adc_0.st_splitter_internal.out0/sample_store_internal.response: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: embedded_computer_system.modular_adc_0.st_splitter_internal.out1/adc_monitor_internal.adc_data: The source has a empty signal of 1 bits, but the sink does not. Avalon-ST Adapter will be inserted.
+Info: embedded_computer_system.sdram_controller: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: embedded_computer_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: embedded_computer_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: embedded_computer_system: Generating embedded_computer_system "embedded_computer_system" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src8 and cmd_mux_008.sink0
+Info: Inserting clock-crossing logic between rsp_demux_008.src0 and rsp_mux.sink8
+Info: VGA_IP_0: "embedded_computer_system" instantiated VGA_IP "VGA_IP_0"
+Info: cpu: "embedded_computer_system" instantiated altera_nios2_gen2 "cpu"
+Info: jtag_uart: Starting RTL generation for module 'embedded_computer_system_jtag_uart'
+Info: jtag_uart:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=embedded_computer_system_jtag_uart --dir=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0003_jtag_uart_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0003_jtag_uart_gen//embedded_computer_system_jtag_uart_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart: Done RTL generation for module 'embedded_computer_system_jtag_uart'
+Info: jtag_uart: "embedded_computer_system" instantiated altera_avalon_jtag_uart "jtag_uart"
+Info: avalon_st_adapter: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter: Inserting timing_adapter: timing_adapter_1
+Info: avalon_st_adapter_001: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_001: Inserting timing_adapter: timing_adapter_1
+Info: avalon_st_adapter_002: Inserting data_format_adapter: data_format_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_0
+Info: avalon_st_adapter_002: Inserting timing_adapter: timing_adapter_1
+Info: modular_adc_0: "embedded_computer_system" instantiated altera_modular_adc "modular_adc_0"
+Info: pio_0: Starting RTL generation for module 'embedded_computer_system_pio_0'
+Info: pio_0:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=embedded_computer_system_pio_0 --dir=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0004_pio_0_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0004_pio_0_gen//embedded_computer_system_pio_0_component_configuration.pl  --do_build_sim=0  ]
+Info: pio_0: Done RTL generation for module 'embedded_computer_system_pio_0'
+Info: pio_0: "embedded_computer_system" instantiated altera_avalon_pio "pio_0"
+Info: pll: "embedded_computer_system" instantiated altpll "pll"
+Info: sdram_controller: Starting RTL generation for module 'embedded_computer_system_sdram_controller'
+Info: sdram_controller:   Generation command is [exec C:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=embedded_computer_system_sdram_controller --dir=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0007_sdram_controller_gen/ --quartus_dir=C:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0007_sdram_controller_gen//embedded_computer_system_sdram_controller_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram_controller: Done RTL generation for module 'embedded_computer_system_sdram_controller'
+Info: sdram_controller: "embedded_computer_system" instantiated altera_avalon_new_sdram_controller "sdram_controller"
+Info: sierra_0: "embedded_computer_system" instantiated sierra "sierra_0"
+Info: sysid_qsys_0: "embedded_computer_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: temperature_set_IP_0: "embedded_computer_system" instantiated temperature_set_IP "temperature_set_IP_0"
+Info: value_0: "embedded_computer_system" instantiated average_value "value_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "embedded_computer_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: irq_mapper: "embedded_computer_system" instantiated altera_irq_mapper "irq_mapper"
+Info: rst_controller: "embedded_computer_system" instantiated altera_reset_controller "rst_controller"
+Info: cpu: Starting RTL generation for module 'embedded_computer_system_cpu_cpu'
+Info: cpu:   Generation command is [exec C:/intelFPGA_lite/18.1/quartus/bin64//eperlcmd.exe -I C:/intelFPGA_lite/18.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/18.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=embedded_computer_system_cpu_cpu --dir=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0013_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/18.1/quartus/bin64/ --verilog --config=C:/Users/Andrey/AppData/Local/Temp/alt9115_8228190837935770185.dir/0013_cpu_gen//embedded_computer_system_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2022.05.03 14:22:09 (*) Starting Nios II generation
+Info: cpu: # 2022.05.03 14:22:09 (*)   Checking for plaintext license.
+Info: cpu: # 2022.05.03 14:22:10 (*)   Plaintext license not found.
+Info: cpu: # 2022.05.03 14:22:10 (*)   No license required to generate encrypted Nios II/e.
+Info: cpu: # 2022.05.03 14:22:10 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2022.05.03 14:22:10 (*)   Creating all objects for CPU
+Info: cpu: # 2022.05.03 14:22:11 (*)   Generating RTL from CPU objects
+Info: cpu: # 2022.05.03 14:22:11 (*)   Creating plain-text RTL
+Info: cpu: # 2022.05.03 14:22:12 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'embedded_computer_system_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: control_internal: "modular_adc_0" instantiated altera_modular_adc_control "control_internal"
+Info: adc_monitor_internal: "modular_adc_0" instantiated altera_trace_adc_monitor "adc_monitor_internal"
+Info: sequencer_internal: "modular_adc_0" instantiated altera_modular_adc_sequencer "sequencer_internal"
+Info: sample_store_internal: "modular_adc_0" instantiated altera_modular_adc_sample_store "sample_store_internal"
+Info: st_splitter_internal: "modular_adc_0" instantiated altera_avalon_st_splitter "st_splitter_internal"
+Info: avalon_st_adapter: "modular_adc_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_001: "modular_adc_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_001"
+Info: average_value_internal_inst: "value_0" instantiated average_value_internal "average_value_internal_inst"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: jtag_uart_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_avalon_jtag_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: jtag_uart_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_avalon_jtag_slave_agent"
+Info: jtag_uart_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_avalon_jtag_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_007: "mm_interconnect_0" instantiated altera_merlin_router "router_007"
+Info: router_009: "mm_interconnect_0" instantiated altera_merlin_router "router_009"
+Info: router_011: "mm_interconnect_0" instantiated altera_merlin_router "router_011"
+Info: sdram_controller_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "sdram_controller_s1_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: cmd_mux_007: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_007"
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/air_conditioner/embedded_computer_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/air_conditioner/embedded_computer_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/air_conditioner/embedded_computer_system/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: value_0_avs_cra_cmd_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "value_0_avs_cra_cmd_width_adapter"
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/air_conditioner/embedded_computer_system/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/air_conditioner/embedded_computer_system/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Andrey/AGSTU/Examensarbete/air_conditioner/embedded_computer_system/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_005: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_005"
+Info: avalon_st_adapter_009: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_009"
+Info: altera_trace_adc_monitor_wa_inst: "Generating: altera_trace_adc_monitor_wa_inst"
+Info: core: "adc_monitor_internal" instantiated altera_trace_adc_monitor_core "core"
+Info: trace_endpoint: "adc_monitor_internal" instantiated altera_trace_monitor_endpoint "trace_endpoint"
+Info: data_format_adapter_0: "avalon_st_adapter" instantiated data_format_adapter "data_format_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_0"
+Info: timing_adapter_1: "avalon_st_adapter" instantiated timing_adapter "timing_adapter_1"
+Info: data_format_adapter_0: "avalon_st_adapter_001" instantiated data_format_adapter "data_format_adapter_0"
+Info: timing_adapter_0: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_0"
+Info: timing_adapter_1: "avalon_st_adapter_001" instantiated timing_adapter "timing_adapter_1"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_005" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_009" instantiated error_adapter "error_adapter_0"
+Info: altera_trace_adc_monitor_wa_inst: "core" instantiated altera_trace_adc_monitor_core "altera_trace_adc_monitor_wa_inst"
+Info: altera_trace_adc_monitor_wa_inst: "altera_trace_adc_monitor_wa_inst" instantiated altera_trace_adc_monitor_wa "altera_trace_adc_monitor_wa_inst"
+Info: embedded_computer_system: Done "embedded_computer_system" with 61 modules, 302 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

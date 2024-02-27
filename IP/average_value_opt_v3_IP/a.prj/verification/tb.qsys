@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags=""
+   categories="" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element average_value_component_cra_slave_memories_done_concatenate_inst
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element average_value_component_dpi_controller_bind_conduit_fanout_inst
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element average_value_component_dpi_controller_enable_conduit_fanout_inst
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element average_value_component_dpi_controller_implicit_ready_conduit_fanout_inst
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element average_value_component_dpi_controller_slave_done_concatenate_inst
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element average_value_component_dpi_controller_slave_readback_fanout_inst
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element average_value_component_dpi_controller_slave_ready_concatenate_inst
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element average_value_inst
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+   }
+   element clock_reset_inst
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element component_dpi_controller_average_value_inst
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element concatenate_component_done_inst
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element concatenate_component_wait_for_stream_writes_inst
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element main_dpi_controller_inst
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element mm_master_dpi_bfm_average_value_avs_a_inst
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element mm_master_dpi_bfm_average_value_avs_cra_inst
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+   }
+   element split_component_start_inst
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10M08DAF256A7G" />
+ <parameter name="deviceFamily" value="MAX 10" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <module
+   name="average_value_component_cra_slave_memories_done_concatenate_inst"
+   kind="avalon_concatenate_singlebit_conduits"
+   version="1.0"
+   enabled="1">
+  <parameter name="multibit_width" value="1" />
+ </module>
+ <module
+   name="average_value_component_dpi_controller_bind_conduit_fanout_inst"
+   kind="avalon_conduit_fanout"
+   version="1.0"
+   enabled="1">
+  <parameter name="numFanOut" value="2" />
+ </module>
+ <module
+   name="average_value_component_dpi_controller_enable_conduit_fanout_inst"
+   kind="avalon_conduit_fanout"
+   version="1.0"
+   enabled="1">
+  <parameter name="numFanOut" value="2" />
+ </module>
+ <module
+   name="average_value_component_dpi_controller_implicit_ready_conduit_fanout_inst"
+   kind="avalon_conduit_fanout"
+   version="1.0"
+   enabled="1">
+  <parameter name="numFanOut" value="2" />
+ </module>
+ <module
+   name="average_value_component_dpi_controller_slave_done_concatenate_inst"
+   kind="avalon_concatenate_singlebit_conduits"
+   version="1.0"
+   enabled="1">
+  <parameter name="multibit_width" value="2" />
+ </module>
+ <module
+   name="average_value_component_dpi_controller_slave_readback_fanout_inst"
+   kind="avalon_conduit_fanout"
+   version="1.0"
+   enabled="1">
+  <parameter name="numFanOut" value="2" />
+ </module>
+ <module
+   name="average_value_component_dpi_controller_slave_ready_concatenate_inst"
+   kind="avalon_concatenate_singlebit_conduits"
+   version="1.0"
+   enabled="1">
+  <parameter name="multibit_width" value="2" />
+ </module>
+ <module
+   name="average_value_inst"
+   kind="average_value"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_CLOCK_CLOCK_DOMAIN" value="1" />
+  <parameter name="AUTO_CLOCK_CLOCK_RATE" value="0" />
+  <parameter name="AUTO_CLOCK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DEVICE" value="10M08DAF256A7G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7" />
+  <parameter name="AUTO_GENERATION_ID" value="0" />
+  <parameter name="AUTO_UNIQUE_ID">tb_average_value_inst</parameter>
+ </module>
+ <module
+   name="clock_reset_inst"
+   kind="hls_sim_clock_reset"
+   version="1.0"
+   enabled="1">
+  <parameter name="RESET_CYCLE_HOLD" value="4" />
+ </module>
+ <module
+   name="component_dpi_controller_average_value_inst"
+   kind="hls_sim_component_dpi_controller"
+   version="1.0"
+   enabled="1">
+  <parameter name="AUTO_COMPONENT_IRQ_INTERRUPTS_USED" value="1" />
+  <parameter name="COMPONENT_HAS_SLAVE_RETURN" value="1" />
+  <parameter name="COMPONENT_NAME" value="average_value" />
+  <parameter name="COMPONENT_NUM_OUTPUT_STREAMS" value="0" />
+  <parameter name="COMPONENT_NUM_SLAVES" value="2" />
+  <parameter name="RETURN_DATAWIDTH" value="64" />
+ </module>
+ <module
+   name="concatenate_component_done_inst"
+   kind="avalon_concatenate_singlebit_conduits"
+   version="1.0"
+   enabled="1">
+  <parameter name="multibit_width" value="1" />
+ </module>
+ <module
+   name="concatenate_component_wait_for_stream_writes_inst"
+   kind="avalon_concatenate_singlebit_conduits"
+   version="1.0"
+   enabled="1">
+  <parameter name="multibit_width" value="1" />
+ </module>
+ <module
+   name="main_dpi_controller_inst"
+   kind="hls_sim_main_dpi_controller"
+   version="1.0"
+   enabled="1">
+  <parameter name="COMPONENT_NAMES_STR" value="average_value" />
+  <parameter name="NUM_COMPONENTS" value="1" />
+ </module>
+ <module
+   name="mm_master_dpi_bfm_average_value_avs_a_inst"
+   kind="hls_sim_mm_master_dpi_bfm"
+   version="1.0"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="AV_ADDRESS_W" value="8" />
+  <parameter name="AV_BURSTCOUNT_W" value="1" />
+  <parameter name="AV_BURST_BNDR_ONLY" value="1" />
+  <parameter name="AV_BURST_LINEWRAP" value="1" />
+  <parameter name="AV_FIX_READ_LATENCY" value="3" />
+  <parameter name="AV_NUMSYMBOLS" value="1" />
+  <parameter name="AV_READ_WAIT_TIME" value="0" />
+  <parameter name="AV_REGISTERINCOMINGSIGNALS" value="0" />
+  <parameter name="AV_SYMBOL_W" value="8" />
+  <parameter name="AV_WRITE_WAIT_TIME" value="0" />
+  <parameter name="COMPONENT_CRA_SLAVE" value="0" />
+  <parameter name="COMPONENT_HAS_SLAVE_RETURN" value="0" />
+  <parameter name="COMPONENT_NAME" value="average_value" />
+  <parameter name="COMPONENT_SLAVE_READ_INTERFACE_NAME" value="a_avs_readback" />
+  <parameter name="COMPONENT_SLAVE_WRITE_INTERFACE_NAME" value="a" />
+  <parameter name="NUM_SLAVE_MEMORIES" value="0" />
+  <parameter name="REGISTER_WAITREQUEST" value="0" />
+  <parameter name="USE_ADDRESS" value="1" />
+  <parameter name="USE_BEGIN_BURST_TRANSFER" value="0" />
+  <parameter name="USE_BEGIN_TRANSFER" value="0" />
+  <parameter name="USE_BURSTCOUNT" value="0" />
+  <parameter name="USE_BYTE_ENABLE" value="1" />
+  <parameter name="USE_READ" value="1" />
+  <parameter name="USE_READ_DATA" value="1" />
+  <parameter name="USE_READ_DATA_VALID" value="1" />
+  <parameter name="USE_WAIT_REQUEST" value="1" />
+  <parameter name="USE_WRITE" value="1" />
+  <parameter name="USE_WRITE_DATA" value="1" />
+ </module>
+ <module
+   name="mm_master_dpi_bfm_average_value_avs_cra_inst"
+   kind="hls_sim_mm_master_dpi_bfm"
+   version="1.0"
+   enabled="1">
+  <parameter name="ADDRESS_UNITS" value="SYMBOLS" />
+  <parameter name="AV_ADDRESS_W" value="6" />
+  <parameter name="AV_BURSTCOUNT_W" value="1" />
+  <parameter name="AV_BURST_BNDR_ONLY" value="1" />
+  <parameter name="AV_BURST_LINEWRAP" value="1" />
+  <parameter name="AV_FIX_READ_LATENCY" value="1" />
+  <parameter name="AV_NUMSYMBOLS" value="8" />
+  <parameter name="AV_READ_WAIT_TIME" value="0" />
+  <parameter name="AV_REGISTERINCOMINGSIGNALS" value="0" />
+  <parameter name="AV_SYMBOL_W" value="8" />
+  <parameter name="AV_WRITE_WAIT_TIME" value="0" />
+  <parameter name="COMPONENT_CRA_SLAVE" value="1" />
+  <parameter name="COMPONENT_HAS_SLAVE_RETURN" value="1" />
+  <parameter name="COMPONENT_NAME" value="average_value" />
+  <parameter name="COMPONENT_SLAVE_READ_INTERFACE_NAME" value="$return" />
+  <parameter name="COMPONENT_SLAVE_WRITE_INTERFACE_NAME">__ihc_hls_avs_write_stream__</parameter>
+  <parameter name="NUM_SLAVE_MEMORIES" value="1" />
+  <parameter name="REGISTER_WAITREQUEST" value="0" />
+  <parameter name="USE_ADDRESS" value="1" />
+  <parameter name="USE_BEGIN_BURST_TRANSFER" value="0" />
+  <parameter name="USE_BEGIN_TRANSFER" value="0" />
+  <parameter name="USE_BURSTCOUNT" value="0" />
+  <parameter name="USE_BYTE_ENABLE" value="1" />
+  <parameter name="USE_READ" value="1" />
+  <parameter name="USE_READ_DATA" value="1" />
+  <parameter name="USE_READ_DATA_VALID" value="1" />
+  <parameter name="USE_WAIT_REQUEST" value="1" />
+  <parameter name="USE_WRITE" value="1" />
+  <parameter name="USE_WRITE_DATA" value="1" />
+ </module>
+ <module
+   name="split_component_start_inst"
+   kind="avalon_split_multibit_conduit"
+   version="1.0"
+   enabled="1">
+  <parameter name="multibit_width" value="1" />
+ </module>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="mm_master_dpi_bfm_average_value_avs_a_inst.m0"
+   end="average_value_inst.avs_a">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="18.1"
+   start="mm_master_dpi_bfm_average_value_avs_cra_inst.m0"
+   end="average_value_inst.avs_cra">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clock_reset_inst.clock"
+   end="main_dpi_controller_inst.clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clock_reset_inst.clock"
+   end="average_value_inst.clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clock_reset_inst.clock"
+   end="mm_master_dpi_bfm_average_value_avs_a_inst.clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clock_reset_inst.clock"
+   end="mm_master_dpi_bfm_average_value_avs_cra_inst.clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clock_reset_inst.clock"
+   end="component_dpi_controller_average_value_inst.clock" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clock_reset_inst.clock2x"
+   end="main_dpi_controller_inst.clock2x" />
+ <connection
+   kind="clock"
+   version="18.1"
+   start="clock_reset_inst.clock2x"
+   end="component_dpi_controller_average_value_inst.clock2x" />
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="component_dpi_controller_average_value_inst.component_done"
+   end="concatenate_component_done_inst.in_conduit_0">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="main_dpi_controller_inst.component_enabled"
+   end="split_component_start_inst.in_conduit">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="component_dpi_controller_average_value_inst.component_wait_for_stream_writes"
+   end="concatenate_component_wait_for_stream_writes_inst.in_conduit_0">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="mm_master_dpi_bfm_average_value_avs_a_inst.cra_control_done_writes_to_cra"
+   end="average_value_component_cra_slave_memories_done_concatenate_inst.in_conduit_0">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="component_dpi_controller_average_value_inst.dpi_control_bind"
+   end="average_value_component_dpi_controller_bind_conduit_fanout_inst.in_conduit">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="mm_master_dpi_bfm_average_value_avs_a_inst.dpi_control_done_reads"
+   end="average_value_component_dpi_controller_slave_done_concatenate_inst.in_conduit_0">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="mm_master_dpi_bfm_average_value_avs_cra_inst.dpi_control_done_reads"
+   end="average_value_component_dpi_controller_slave_done_concatenate_inst.in_conduit_1">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="mm_master_dpi_bfm_average_value_avs_a_inst.dpi_control_done_writes"
+   end="average_value_component_dpi_controller_slave_ready_concatenate_inst.in_conduit_0">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="mm_master_dpi_bfm_average_value_avs_cra_inst.dpi_control_done_writes"
+   end="average_value_component_dpi_controller_slave_ready_concatenate_inst.in_conduit_1">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="component_dpi_controller_average_value_inst.dpi_control_enable"
+   end="average_value_component_dpi_controller_enable_conduit_fanout_inst.in_conduit">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="concatenate_component_done_inst.out_conduit"
+   end="main_dpi_controller_inst.component_done">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="concatenate_component_wait_for_stream_writes_inst.out_conduit"
+   end="main_dpi_controller_inst.component_wait_for_stream_writes">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_cra_slave_memories_done_concatenate_inst.out_conduit"
+   end="mm_master_dpi_bfm_average_value_avs_cra_inst.cra_control_slave_memory_writes_done">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_slave_done_concatenate_inst.out_conduit"
+   end="component_dpi_controller_average_value_inst.dpi_control_slaves_done">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_slave_ready_concatenate_inst.out_conduit"
+   end="component_dpi_controller_average_value_inst.dpi_control_slaves_ready">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="split_component_start_inst.out_conduit_0"
+   end="component_dpi_controller_average_value_inst.component_enabled">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_bind_conduit_fanout_inst.out_conduit_0"
+   end="mm_master_dpi_bfm_average_value_avs_a_inst.dpi_control_bind">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_slave_readback_fanout_inst.out_conduit_0"
+   end="mm_master_dpi_bfm_average_value_avs_a_inst.dpi_control_component_done">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_implicit_ready_conduit_fanout_inst.out_conduit_0"
+   end="mm_master_dpi_bfm_average_value_avs_a_inst.dpi_control_component_started">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_enable_conduit_fanout_inst.out_conduit_0"
+   end="mm_master_dpi_bfm_average_value_avs_a_inst.dpi_control_enable">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_bind_conduit_fanout_inst.out_conduit_1"
+   end="mm_master_dpi_bfm_average_value_avs_cra_inst.dpi_control_bind">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_slave_readback_fanout_inst.out_conduit_1"
+   end="mm_master_dpi_bfm_average_value_avs_cra_inst.dpi_control_component_done">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_implicit_ready_conduit_fanout_inst.out_conduit_1"
+   end="mm_master_dpi_bfm_average_value_avs_cra_inst.dpi_control_component_started">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="average_value_component_dpi_controller_enable_conduit_fanout_inst.out_conduit_1"
+   end="mm_master_dpi_bfm_average_value_avs_cra_inst.dpi_control_enable">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="component_dpi_controller_average_value_inst.read_implicit_streams"
+   end="average_value_component_dpi_controller_implicit_ready_conduit_fanout_inst.in_conduit">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="component_dpi_controller_average_value_inst.readback_from_slaves"
+   end="average_value_component_dpi_controller_slave_readback_fanout_inst.in_conduit">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="conduit"
+   version="18.1"
+   start="main_dpi_controller_inst.reset_ctrl"
+   end="clock_reset_inst.reset_ctrl">
+  <parameter name="endPort" value="" />
+  <parameter name="endPortLSB" value="0" />
+  <parameter name="startPort" value="" />
+  <parameter name="startPortLSB" value="0" />
+  <parameter name="width" value="0" />
+ </connection>
+ <connection
+   kind="interrupt"
+   version="18.1"
+   start="component_dpi_controller_average_value_inst.component_irq"
+   end="average_value_inst.irq">
+  <parameter name="irqNumber" value="0" />
+ </connection>
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock_reset_inst.reset"
+   end="main_dpi_controller_inst.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock_reset_inst.reset"
+   end="average_value_inst.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock_reset_inst.reset"
+   end="mm_master_dpi_bfm_average_value_avs_a_inst.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock_reset_inst.reset"
+   end="mm_master_dpi_bfm_average_value_avs_cra_inst.reset" />
+ <connection
+   kind="reset"
+   version="18.1"
+   start="clock_reset_inst.reset"
+   end="component_dpi_controller_average_value_inst.reset" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

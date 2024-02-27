@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu May 26 10:27:43 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : quartus_compile
+Top-level Entity Name : quartus_compile
+Family : MAX 10
+Device : 10M50DAF672I7G
+Timing Models : Final
+Total logic elements : 8,451 / 49,760 ( 17 % )
+    Total combinational functions : 6,795 / 49,760 ( 14 % )
+    Dedicated logic registers : 3,770 / 49,760 ( 8 % )
+Total registers : 3770
+Total pins : 0 / 500 ( 0 % )
+Total virtual pins : 220
+Total memory bits : 391,056 / 1,677,312 ( 23 % )
+Embedded Multiplier 9-bit elements : 64 / 288 ( 22 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

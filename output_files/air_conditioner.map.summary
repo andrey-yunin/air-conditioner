@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Fri May 27 16:21:08 2022
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : air_conditioner
+Top-level Entity Name : air_conditioner
+Family : MAX 10
+Total logic elements : 17,379
+    Total combinational functions : 13,384
+    Dedicated logic registers : 8,905
+Total registers : 8905
+Total pins : 85
+Total virtual pins : 0
+Total memory bits : 1,066,224
+Embedded Multiplier 9-bit elements : 64
+Total PLLs : 2
+UFM blocks : 0
+ADC blocks : 1

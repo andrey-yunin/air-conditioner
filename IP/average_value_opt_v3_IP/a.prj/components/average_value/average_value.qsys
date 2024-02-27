@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system name="$${FILENAME}">
+ <component
+   name="$${FILENAME}"
+   displayName="$${FILENAME}"
+   version="1.0"
+   description=""
+   tags="INTERNAL_COMPONENT=false"
+   categories="HLS" />
+ <parameter name="bonusData"><![CDATA[bonusData 
+{
+   element average_value_internal_inst
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+}
+]]></parameter>
+ <parameter name="clockCrossingAdapter" value="HANDSHAKE" />
+ <parameter name="device" value="10M50DAF672I7G" />
+ <parameter name="deviceFamily" value="MAX 10" />
+ <parameter name="deviceSpeedGrade" value="7" />
+ <parameter name="fabricMode" value="QSYS" />
+ <parameter name="generateLegacySim" value="false" />
+ <parameter name="generationId" value="0" />
+ <parameter name="globalResetBus" value="false" />
+ <parameter name="hdlLanguage" value="VERILOG" />
+ <parameter name="hideFromIPCatalog" value="false" />
+ <parameter name="lockedInterfaceDefinition" value="" />
+ <parameter name="maxAdditionalLatency" value="1" />
+ <parameter name="projectName" value="" />
+ <parameter name="sopcBorderPoints" value="false" />
+ <parameter name="systemHash" value="0" />
+ <parameter name="testBenchDutName" value="" />
+ <parameter name="timeStamp" value="0" />
+ <parameter name="useTestBenchNamingPattern" value="false" />
+ <instanceScript></instanceScript>
+ <interface
+   name="avs_a"
+   internal="average_value_internal_inst.avs_a"
+   type="avalon"
+   dir="end">
+  <port name="avs_a_read" internal="avs_a_read" />
+  <port name="avs_a_write" internal="avs_a_write" />
+  <port name="avs_a_address" internal="avs_a_address" />
+  <port name="avs_a_writedata" internal="avs_a_writedata" />
+  <port name="avs_a_byteenable" internal="avs_a_byteenable" />
+  <port name="avs_a_readdata" internal="avs_a_readdata" />
+ </interface>
+ <interface
+   name="avs_cra"
+   internal="average_value_internal_inst.avs_cra"
+   type="avalon"
+   dir="end">
+  <port name="avs_cra_read" internal="avs_cra_read" />
+  <port name="avs_cra_write" internal="avs_cra_write" />
+  <port name="avs_cra_address" internal="avs_cra_address" />
+  <port name="avs_cra_writedata" internal="avs_cra_writedata" />
+  <port name="avs_cra_byteenable" internal="avs_cra_byteenable" />
+  <port name="avs_cra_readdata" internal="avs_cra_readdata" />
+ </interface>
+ <interface
+   name="clock"
+   internal="average_value_internal_inst.clock"
+   type="clock"
+   dir="end">
+  <port name="clock" internal="clock" />
+ </interface>
+ <interface
+   name="irq"
+   internal="average_value_internal_inst.irq"
+   type="interrupt"
+   dir="end">
+  <port name="done_irq" internal="done_irq" />
+ </interface>
+ <interface
+   name="reset"
+   internal="average_value_internal_inst.reset"
+   type="reset"
+   dir="end">
+  <port name="resetn" internal="resetn" />
+ </interface>
+ <module
+   name="average_value_internal_inst"
+   kind="average_value_internal"
+   version="1.0"
+   enabled="1"
+   autoexport="1" />
+ <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
+ <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />
+ <interconnectRequirement for="$system" name="qsys_mm.maxAdditionalLatency" value="1" />
+</system>

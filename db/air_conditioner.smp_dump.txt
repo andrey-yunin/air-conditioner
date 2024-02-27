@@ -1,0 +1,211 @@
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|temperature_set_IP:temperature_set_ip_0|temperature_select:temperature_function|state
+Name state.temperature_down_state state.temperature_up_state state.control_state 
+state.control_state 0 0 0 
+state.temperature_up_state 0 1 1 
+state.temperature_down_state 1 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|sierra:sierra_0|sierra_top:sierra|sch_top:Schema_comp|current_state_SCH
+Name current_state_SCH.Start_mod_state current_state_SCH.IRQ_Blocked_state_2 current_state_SCH.IRQ_Blocked_state current_state_SCH.wait_state current_state_SCH.write_state_2 current_state_SCH.write_state current_state_SCH.start_bif_state current_state_SCH.create_state current_state_SCH.schedule_state_6 current_state_SCH.schedule_state_5 current_state_SCH.schedule_state_4 current_state_SCH.schedule_state_3 current_state_SCH.schedule_state_2 current_state_SCH.schedule_state current_state_SCH.delete_state current_state_SCH.blocked_other_task_state_1 current_state_SCH.blocked_other_task_state current_state_SCH.blocked_state current_state_SCH.rdv_bif_state current_state_SCH.Yield_write_4_state current_state_SCH.Yield_write_3_state current_state_SCH.Yield_write_2_state current_state_SCH.yield_write_state current_state_SCH.yield_state current_state_SCH.task_change_prio_state current_state_SCH.info_state current_state_SCH.reset_state 
+current_state_SCH.reset_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state_SCH.info_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state_SCH.task_change_prio_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state_SCH.yield_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state_SCH.yield_write_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state_SCH.Yield_write_2_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state_SCH.Yield_write_3_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state_SCH.Yield_write_4_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state_SCH.rdv_bif_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state_SCH.blocked_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state_SCH.blocked_other_task_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.blocked_other_task_state_1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.delete_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.schedule_state 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.schedule_state_2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.schedule_state_3 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.schedule_state_4 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.schedule_state_5 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.schedule_state_6 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.create_state 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.start_bif_state 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.write_state 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.write_state_2 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.wait_state 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.IRQ_Blocked_state 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.IRQ_Blocked_state_2 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_SCH.Start_mod_state 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|sierra:sierra_0|sierra_top:sierra|modules_top:Module_comp|mod2rdy:MOD2RDY_component|current_state
+Name current_state.complete_st_2 current_state.complete_st current_state.ack_st_ext current_state.ack_st_sem current_state.ack_st_tmq current_state.ack_st_irq current_state.ack_st current_state.wait_st 
+current_state.wait_st 0 0 0 0 0 0 0 0 
+current_state.ack_st 0 0 0 0 0 0 1 1 
+current_state.ack_st_irq 0 0 0 0 0 1 0 1 
+current_state.ack_st_tmq 0 0 0 0 1 0 0 1 
+current_state.ack_st_sem 0 0 0 1 0 0 0 1 
+current_state.ack_st_ext 0 0 1 0 0 0 0 1 
+current_state.complete_st 0 1 0 0 0 0 0 1 
+current_state.complete_st_2 1 0 0 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|sierra:sierra_0|sierra_top:sierra|modules_top:Module_comp|irq_top:IRQ_component|current_IRQ_state
+Name current_IRQ_state.RDV_IRQ_ACTIVATE_2_state current_IRQ_state.RDV_IRQ_ACTIVATE_1_state current_IRQ_state.RDV_WAIT_IRQ_B_state current_IRQ_state.RDV_IRQ_ACTIVATE_state current_IRQ_state.RDV_WAIT_IRQ_state current_IRQ_state.wait_IRQ_state 
+current_IRQ_state.wait_IRQ_state 0 0 0 0 0 0 
+current_IRQ_state.RDV_WAIT_IRQ_state 0 0 0 0 1 1 
+current_IRQ_state.RDV_IRQ_ACTIVATE_state 0 0 0 1 0 1 
+current_IRQ_state.RDV_WAIT_IRQ_B_state 0 0 1 0 0 1 
+current_IRQ_state.RDV_IRQ_ACTIVATE_1_state 0 1 0 0 0 1 
+current_IRQ_state.RDV_IRQ_ACTIVATE_2_state 1 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|sierra:sierra_0|sierra_top:sierra|modules_top:Module_comp|tmq_top:tmq_component|current_state_tmq
+Name current_state_tmq.restart_periodic_tmq_state current_state_tmq.wait_periodic_one_tmq_State current_state_tmq.wait_periodic_tmq_State current_state_tmq.init_periodic_tmq_State current_state_tmq.write_undelay_one_state current_state_tmq.write_undelay_state current_state_tmq.send_undelay_task_state current_state_tmq.undelay_tmq_State current_state_tmq.delay_tmq_one_State current_state_tmq.delay_tmq_State current_state_tmq.count_tick_state current_state_tmq.send_task_state current_state_tmq.write_tick_two_state current_state_tmq.write_tick_state current_state_tmq.tick_State current_state_tmq.read_tmq_two_State current_state_tmq.read_tmq_State current_state_tmq.wait_for_svc_or_tick current_state_tmq.reset_ram_tmq_state 
+current_state_tmq.reset_ram_tmq_state 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state_tmq.wait_for_svc_or_tick 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state_tmq.read_tmq_State 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state_tmq.read_tmq_two_State 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state_tmq.tick_State 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state_tmq.write_tick_state 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state_tmq.write_tick_two_state 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state_tmq.send_task_state 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state_tmq.count_tick_state 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state_tmq.delay_tmq_State 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state_tmq.delay_tmq_one_State 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.undelay_tmq_State 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.send_undelay_task_state 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.write_undelay_state 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.write_undelay_one_state 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.init_periodic_tmq_State 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.wait_periodic_tmq_State 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.wait_periodic_one_tmq_State 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state_tmq.restart_periodic_tmq_state 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|sierra:sierra_0|sierra_top:sierra|modules_top:Module_comp|sem_top:SEM_com|state_resource
+Name state_resource.wait_state state_resource.rdv_bif_state state_resource.next_task_wait_state state_resource.count_down_scan_state state_resource.rdv_rdy_scan_state state_resource.start_task_scan_state state_resource.scan_for_flag_state state_resource.scan_for_sem_state state_resource.read_state state_resource.reset_ram_state 
+state_resource.reset_ram_state 0 0 0 0 0 0 0 0 0 0 
+state_resource.read_state 0 0 0 0 0 0 0 0 1 1 
+state_resource.scan_for_sem_state 0 0 0 0 0 0 0 1 0 1 
+state_resource.scan_for_flag_state 0 0 0 0 0 0 1 0 0 1 
+state_resource.start_task_scan_state 0 0 0 0 0 1 0 0 0 1 
+state_resource.rdv_rdy_scan_state 0 0 0 0 1 0 0 0 0 1 
+state_resource.count_down_scan_state 0 0 0 1 0 0 0 0 0 1 
+state_resource.next_task_wait_state 0 0 1 0 0 0 0 0 0 1 
+state_resource.rdv_bif_state 0 1 0 0 0 0 0 0 0 1 
+state_resource.wait_state 1 0 0 0 0 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|sierra:sierra_0|sierra_top:sierra|bif_top:Bif_comp|current_SVC_state
+Name current_SVC_state.RDV_SEM_SVC_state current_SVC_state.RDV_TMQ_SVC_state current_SVC_state.RDV_IRQ_SVC_state current_SVC_state.RDV_SCH_SVC_state current_SVC_state.RDV_SVC_2_state current_SVC_state.wait_SVC_state 
+current_SVC_state.wait_SVC_state 0 0 0 0 0 0 
+current_SVC_state.RDV_SVC_2_state 0 0 0 0 1 1 
+current_SVC_state.RDV_SCH_SVC_state 0 0 0 1 0 1 
+current_SVC_state.RDV_IRQ_SVC_state 0 0 1 0 0 1 
+current_SVC_state.RDV_TMQ_SVC_state 0 1 0 0 0 1 
+current_SVC_state.RDV_SEM_SVC_state 1 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|embedded_computer_system_sdram_controller:sdram_controller|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|embedded_computer_system_sdram_controller:sdram_controller|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|embedded_computer_system_sdram_controller:sdram_controller|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|embedded_computer_system_sdram_controller:sdram_controller|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|embedded_computer_system_modular_adc_0:modular_adc_0|embedded_computer_system_modular_adc_0_adc_monitor_internal:adc_monitor_internal|altera_trace_adc_monitor_core:core|altera_trace_adc_monitor_capture_interface:capture_interface|state
+Name state.ST_CI_WAIT_BEAT0_REM state.ST_CI_WAIT_CAPTURE_READY state.ST_CI_WAIT_WA_DATA state.ST_CI_TS state.ST_CI_HDR state.ST_CI_WAIT_1ST_ADC state.ST_CI_IDLE 
+state.ST_CI_IDLE 0 0 0 0 0 0 0 
+state.ST_CI_WAIT_1ST_ADC 0 0 0 0 0 1 1 
+state.ST_CI_HDR 0 0 0 0 1 0 1 
+state.ST_CI_TS 0 0 0 1 0 0 1 
+state.ST_CI_WAIT_WA_DATA 0 0 1 0 0 0 1 
+state.ST_CI_WAIT_CAPTURE_READY 0 1 0 0 0 0 1 
+state.ST_CI_WAIT_BEAT0_REM 1 0 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|embedded_computer_system_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|ctrl_state
+Name ctrl_state.SYNC1 ctrl_state.AVRG_CNT ctrl_state.PUTRESP_PEND ctrl_state.WAIT_PEND_DLY1 ctrl_state.WAIT_PEND ctrl_state.PUTRESP_DLY3 ctrl_state.PUTRESP_DLY2 ctrl_state.PUTRESP_DLY1 ctrl_state.PUTRESP ctrl_state.CONV_DLY1 ctrl_state.CONV ctrl_state.PRE_CONV ctrl_state.GETCMD_W ctrl_state.GETCMD ctrl_state.WAIT ctrl_state.PWRUP_SOC ctrl_state.PWRUP_CH ctrl_state.PWRDWN_DONE ctrl_state.PWRDWN_TSEN ctrl_state.PWRDWN ctrl_state.IDLE 
+ctrl_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+ctrl_state.PWRDWN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+ctrl_state.PWRDWN_TSEN 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+ctrl_state.PWRDWN_DONE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+ctrl_state.PWRUP_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+ctrl_state.PWRUP_SOC 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+ctrl_state.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+ctrl_state.GETCMD 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+ctrl_state.GETCMD_W 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+ctrl_state.PRE_CONV 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.CONV_DLY1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_DLY3 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.WAIT_PEND_DLY1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.PUTRESP_PEND 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.AVRG_CNT 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+ctrl_state.SYNC1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |air_conditioner|embedded_computer_system:inst_embedded_computer_system|embedded_computer_system_cpu:cpu|embedded_computer_system_cpu_cpu:cpu|embedded_computer_system_cpu_cpu_nios2_oci:the_embedded_computer_system_cpu_cpu_nios2_oci|embedded_computer_system_cpu_cpu_debug_slave_wrapper:the_embedded_computer_system_cpu_cpu_debug_slave_wrapper|embedded_computer_system_cpu_cpu_debug_slave_tck:the_embedded_computer_system_cpu_cpu_debug_slave_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
+
+State Machine - |air_conditioner|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_host_link_jtag:host_link_jtag|altera_avalon_st_jtag_interface:jtag|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|read_state
+Name read_state.ST_HEADER read_state.ST_READ_DATA read_state.ST_PADDED 
+read_state.ST_HEADER 0 0 0 
+read_state.ST_PADDED 1 0 1 
+read_state.ST_READ_DATA 1 1 0 
+
+State Machine - |air_conditioner|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_host_link_jtag:host_link_jtag|altera_avalon_st_jtag_interface:jtag|altera_jtag_dc_streaming:normal.jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|write_state
+Name write_state.ST_WRITE_DATA write_state.ST_HEADER_2 write_state.ST_HEADER_1 write_state.ST_BYPASS 
+write_state.ST_BYPASS 0 0 0 0 
+write_state.ST_HEADER_1 0 0 1 1 
+write_state.ST_HEADER_2 0 1 0 1 
+write_state.ST_WRITE_DATA 1 0 0 1 
+
+State Machine - |air_conditioner|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_trfabric:trfabric|altera_trace_capture_controller:capture|altera_trace_capture_header_parser:hdr_parse|state
+Name state.S_GEN_HDR_ADR state.S_WR_ACK state.S_PROC state.S_RD_WAIT state.S_READ state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 
+state.S_READ 0 0 0 0 1 1 
+state.S_RD_WAIT 0 0 0 1 0 1 
+state.S_PROC 0 0 1 0 0 1 
+state.S_WR_ACK 0 1 0 0 0 1 
+state.S_GEN_HDR_ADR 1 0 0 0 0 1 
+
+State Machine - |air_conditioner|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_trfabric:trfabric|altera_trace_transacto_lite:trans0|state
+Name state.S_WACK state.S_WWAIT state.S_WDATA state.S_RDATA state.S_R_WAIT state.S_RDLEN state.S_ADDR state.S_IDLE 
+state.S_IDLE 0 0 0 0 0 0 0 0 
+state.S_ADDR 0 0 0 0 0 0 1 1 
+state.S_RDLEN 0 0 0 0 0 1 0 1 
+state.S_R_WAIT 0 0 0 0 1 0 0 1 
+state.S_RDATA 0 0 0 1 0 0 0 1 
+state.S_WDATA 0 0 1 0 0 0 0 1 
+state.S_WWAIT 0 1 0 0 0 0 0 1 
+state.S_WACK 1 0 0 0 0 0 0 1 

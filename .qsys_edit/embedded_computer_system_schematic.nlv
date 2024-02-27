@@ -1,0 +1,48 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst embedded_computer_system.pio_0 -pg 1 -lvl 3 -y 330
+preplace inst embedded_computer_system.value_0 -pg 1 -lvl 3 -y 50
+preplace inst embedded_computer_system.modular_adc_0.adc_monitor_internal -pg 1
+preplace inst embedded_computer_system.modular_adc_0.adc_monitor_internal.core -pg 1
+preplace inst embedded_computer_system.modular_adc_0.adc_monitor_internal.clock_bridge -pg 1
+preplace inst embedded_computer_system.cpu.cpu -pg 1
+preplace inst embedded_computer_system.sdram_controller -pg 1 -lvl 2 -y 850
+preplace inst embedded_computer_system.modular_adc_0.st_splitter_internal -pg 1
+preplace inst embedded_computer_system.cpu -pg 1 -lvl 1 -y 110
+preplace inst embedded_computer_system.sierra_0 -pg 1 -lvl 3 -y 190
+preplace inst embedded_computer_system.cpu.reset_bridge -pg 1
+preplace inst embedded_computer_system.value_0.average_value_internal_inst -pg 1
+preplace inst embedded_computer_system.pll -pg 1 -lvl 2 -y 550
+preplace inst embedded_computer_system.clk_0 -pg 1 -lvl 1 -y 550
+preplace inst embedded_computer_system.modular_adc_0.sequencer_internal -pg 1
+preplace inst embedded_computer_system.modular_adc_0.adc_monitor_internal.reset_bridge -pg 1
+preplace inst embedded_computer_system.modular_adc_0.control_internal -pg 1
+preplace inst embedded_computer_system.modular_adc_0.rst_inst -pg 1
+preplace inst embedded_computer_system.cpu.clock_bridge -pg 1
+preplace inst embedded_computer_system.VGA_IP_0 -pg 1 -lvl 2 -y 670
+preplace inst embedded_computer_system.jtag_uart -pg 1 -lvl 2 -y 240
+preplace inst embedded_computer_system.temperature_set_IP_0 -pg 1 -lvl 3 -y 430
+preplace inst embedded_computer_system.modular_adc_0.sample_store_internal -pg 1
+preplace inst embedded_computer_system.modular_adc_0.cb_inst -pg 1
+preplace inst embedded_computer_system.sysid_qsys_0 -pg 1 -lvl 2 -y 770
+preplace inst embedded_computer_system.modular_adc_0.adc_monitor_internal.trace_endpoint -pg 1
+preplace inst embedded_computer_system.modular_adc_0 -pg 1 -lvl 2 -y 50
+preplace inst embedded_computer_system -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc POINT_TO_POINT<net_container>embedded_computer_system</net_container>(MASTER)clk_0.clk,(SLAVE)pll.inclk_interface) 1 1 1 N
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)embedded_computer_system.vga_ip_0_conduit_end,(SLAVE)VGA_IP_0.conduit_end) 1 0 2 NJ 720 NJ
+preplace netloc POINT_TO_POINT<net_container>embedded_computer_system</net_container>(SLAVE)modular_adc_0.adc_pll_locked,(SLAVE)pll.locked_conduit) 1 1 1 680
+preplace netloc POINT_TO_POINT<net_container>embedded_computer_system</net_container>(MASTER)pll.c2,(SLAVE)modular_adc_0.adc_pll_clock) 1 1 2 660 500 1010
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)temperature_set_IP_0.conduit_end,(SLAVE)embedded_computer_system.temperature_set_ip_0) 1 0 3 NJ 480 NJ 480 NJ
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)embedded_computer_system.sierra_0_conduit_end_1,(SLAVE)sierra_0.conduit_end_1) 1 0 3 NJ 370 NJ 370 NJ
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)clk_0.clk_in,(SLAVE)embedded_computer_system.clk) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>embedded_computer_system</net_container>(MASTER)cpu.instruction_master,(MASTER)cpu.data_master,(SLAVE)value_0.avs_cra,(SLAVE)modular_adc_0.sequencer_csr,(SLAVE)pll.pll_slave,(SLAVE)VGA_IP_0.avalon_slave_0,(SLAVE)sierra_0.avalon_slave_0,(SLAVE)modular_adc_0.sample_store_csr,(SLAVE)pio_0.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)sysid_qsys_0.control_slave,(SLAVE)value_0.avs_a,(SLAVE)sdram_controller.s1,(SLAVE)temperature_set_IP_0.avalon_slave_0,(SLAVE)cpu.debug_mem_slave) 1 0 3 200 540 580 390 1090
+preplace netloc FAN_OUT<net_container>embedded_computer_system</net_container>(SLAVE)cpu.clk,(SLAVE)VGA_IP_0.clock,(SLAVE)sysid_qsys_0.clk,(SLAVE)modular_adc_0.clock,(SLAVE)sierra_0.clock_reset,(SLAVE)temperature_set_IP_0.clock,(SLAVE)sdram_controller.clk,(MASTER)pll.c0,(SLAVE)jtag_uart.clk,(SLAVE)pio_0.clk,(SLAVE)value_0.clock) 1 0 3 180 520 600 660 1070
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(MASTER)embedded_computer_system.pll_c1,(MASTER)pll.c1) 1 2 2 NJ 580 NJ
+preplace netloc INTERCONNECT<net_container>embedded_computer_system</net_container>(SLAVE)VGA_IP_0.reset,(SLAVE)value_0.reset,(MASTER)cpu.debug_reset_request,(SLAVE)pio_0.reset,(SLAVE)sysid_qsys_0.reset,(SLAVE)temperature_set_IP_0.reset,(SLAVE)jtag_uart.reset,(SLAVE)cpu.reset,(SLAVE)sierra_0.clock_reset_reset,(SLAVE)modular_adc_0.reset_sink,(SLAVE)pll.inclk_interface_reset,(MASTER)clk_0.clk_reset,(SLAVE)sdram_controller.reset) 1 0 3 220 500 620 410 1110
+preplace netloc FAN_OUT<net_container>embedded_computer_system</net_container>(MASTER)cpu.irq,(SLAVE)modular_adc_0.sample_store_irq,(SLAVE)sierra_0.interrupt_sender,(SLAVE)jtag_uart.irq,(SLAVE)value_0.irq) 1 1 2 640 230 1050
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)embedded_computer_system.sdram_controller,(SLAVE)sdram_controller.wire) 1 0 2 NJ 920 NJ
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)sierra_0.conduit_end,(SLAVE)embedded_computer_system.sierra_0_conduit_end) 1 0 3 NJ 350 NJ 350 NJ
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)embedded_computer_system.pio_0,(SLAVE)pio_0.external_connection) 1 0 3 NJ 430 NJ 430 NJ
+preplace netloc EXPORT<net_container>embedded_computer_system</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)embedded_computer_system.reset) 1 0 1 NJ
+levelinfo -pg 1 0 150 1420
+levelinfo -hier embedded_computer_system 160 340 820 1200 1350

@@ -1,0 +1,8 @@
+{"name":"Info","rows":[
+{"name":"Project Name","data":["./a"],"classes":["info-table"]},
+{"name":"Target Family, Device","data":["MAX 10, 10M50DAF672I7G"]},
+{"name":"i++ Version","data":["18.1.0 Build 625"]},
+{"name":"Quartus Version","data":["18.1.0 Build 625"]},
+{"name":"Command","data":["i++ -march=MAX10 --quartus-compile --fpc --fp-relaxed --clock 50MHz average_value.c"]},
+{"name":"Reports Generated At", "data":["Thu May 26 10:22:55 2022"]}
+]}

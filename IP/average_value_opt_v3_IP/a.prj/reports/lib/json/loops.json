@@ -1,0 +1,98 @@
+{
+  "columns":
+  ["", "Pipelined", "II", "Bottleneck", "Details"]
+  , "children":
+  [
+    {
+      "name":"Component: average_value"
+      , "data":
+      ["", "", ""]
+      , "debug":
+      [
+        [
+          {
+            "filename":"average_value.c"
+            , "line":18
+          }
+        ]
+      ]
+      , "details":
+      [
+        {
+          "type":"brief"
+          , "text":"Task function"
+        }
+        , {
+          "type":"text"
+          , "text":"Task function"
+        }
+      ]
+      , "children":
+      [
+        {
+          "name":"average_value.B1.start"
+          , "data":
+          ["Yes", ">=1", "n/a"]
+          , "debug":
+          [
+            [
+              {
+                "filename":"Component invocation"
+                , "line":0
+              }
+            ]
+          ]
+          , "details":
+          [
+            {
+              "type":"brief"
+              , "text":" "
+            }
+            , {
+              "type":"text"
+              , "text":"Run simulation to verify component's dynamic II. Use the %L report to view results. II is an approximation due to variable inner loop trip count."
+              , "links":
+              [
+                {
+                  "view":"Verification statistics"
+                }
+              ]
+            }
+          ]
+          , "children":
+          [
+            {
+              "name":"average_value.B2"
+              , "data":
+              ["Yes", "1", "n/a"]
+              , "debug":
+              [
+                [
+                  {
+                    "filename":"average_value.c"
+                    , "line":29
+                  }
+                ]
+                , [
+                  {
+                    "filename":"average_value.c"
+                    , "line":29
+                  }
+                ]
+                , [
+                  {
+                    "filename":"average_value.c"
+                    , "line":33
+                  }
+                ]
+              ]
+              , "children":
+              [
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
